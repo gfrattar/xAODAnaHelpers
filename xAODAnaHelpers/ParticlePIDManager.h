@@ -57,12 +57,16 @@ class ElectronLHPIDManager
     std::set<std::string> m_allWPAuxDecors;
     std::set<std::string> m_validWPs;
 
-    AsgElectronLikelihoodTool*  m_asgElectronLikelihoodTool_VeryLooseNP;
     AsgElectronLikelihoodTool*  m_asgElectronLikelihoodTool_VeryLoose;
     AsgElectronLikelihoodTool*  m_asgElectronLikelihoodTool_Loose;
     AsgElectronLikelihoodTool*  m_asgElectronLikelihoodTool_LooseBL;
     AsgElectronLikelihoodTool*  m_asgElectronLikelihoodTool_Medium;
     AsgElectronLikelihoodTool*  m_asgElectronLikelihoodTool_Tight;
+
+    AsgElectronLikelihoodTool*  m_asgElectronLikelihoodTool_VeryLooseLLP;
+    AsgElectronLikelihoodTool*  m_asgElectronLikelihoodTool_LooseLLP;
+    AsgElectronLikelihoodTool*  m_asgElectronLikelihoodTool_MediumLLP;
+    AsgElectronLikelihoodTool*  m_asgElectronLikelihoodTool_TightLLP;
 
 };
 

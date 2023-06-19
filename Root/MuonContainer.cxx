@@ -179,7 +179,7 @@ MuonContainer::~MuonContainer()
     delete m_topoetcone20                               ;
     delete m_topoetcone30                               ;
     delete m_topoetcone40                               ;
-    delete m_neflowisol20;                               
+    delete m_neflowisol20                               ;                               
     delete m_ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt500;
   }
   
@@ -865,15 +865,15 @@ void MuonContainer::FillMuon( const xAOD::IParticle* particle, const xAOD::Verte
   }
 
   if ( m_infoSwitch.m_isolationKinematics ) {
-    //m_ptcone20    ->push_back( muon->isolation( xAOD::Iso::ptcone20 )    /m_units );
-    //m_ptcone30    ->push_back( muon->isolation( xAOD::Iso::ptcone30 )    /m_units );
-    //m_ptcone40    ->push_back( muon->isolation( xAOD::Iso::ptcone40 )    /m_units );
-    //m_ptvarcone20 ->push_back( muon->isolation( xAOD::Iso::ptvarcone20 ) /m_units );
-    //m_ptvarcone30 ->push_back( muon->isolation( xAOD::Iso::ptvarcone30 ) /m_units );
-    //m_ptvarcone40 ->push_back( muon->isolation( xAOD::Iso::ptvarcone40 ) /m_units );
-    //m_topoetcone20->push_back( muon->isolation( xAOD::Iso::topoetcone20 )/m_units );
-    //m_topoetcone30->push_back( muon->isolation( xAOD::Iso::topoetcone30 )/m_units );
-    //m_topoetcone40->push_back( muon->isolation( xAOD::Iso::topoetcone40 )/m_units );
+    m_ptcone20    ->push_back( muon->isolation( xAOD::Iso::ptcone20 )    /m_units );
+    m_ptcone30    ->push_back( muon->isolation( xAOD::Iso::ptcone30 )    /m_units );
+    m_ptcone40    ->push_back( muon->isolation( xAOD::Iso::ptcone40 )    /m_units );
+    m_ptvarcone20 ->push_back( muon->isolation( xAOD::Iso::ptvarcone20 ) /m_units );
+    m_ptvarcone30 ->push_back( muon->isolation( xAOD::Iso::ptvarcone30 ) /m_units );
+    m_ptvarcone40 ->push_back( muon->isolation( xAOD::Iso::ptvarcone40 ) /m_units );
+    m_topoetcone20->push_back( muon->isolation( xAOD::Iso::topoetcone20 )/m_units );
+    m_topoetcone30->push_back( muon->isolation( xAOD::Iso::topoetcone30 )/m_units );
+    m_topoetcone40->push_back( muon->isolation( xAOD::Iso::topoetcone40 )/m_units );
     m_neflowisol20->push_back( muon->isolation( xAOD::Iso::neflowisol20 )/m_units );
     m_ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt500->push_back( muon->isolation( xAOD::Iso::ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt500 )/m_units );
   }
