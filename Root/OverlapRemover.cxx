@@ -24,10 +24,6 @@
 #include "xAODEgamma/Photon.h"
 #include "xAODMuon/MuonContainer.h"
 #include "xAODMuon/Muon.h"
-#include "xAODJet/JetContainer.h"
-#include "xAODJet/Jet.h"
-#include "xAODTau/TauJetContainer.h"
-#include "xAODTau/TauJet.h"
 #include "AthContainers/ConstDataVector.h"
 #include "xAODCore/ShallowCopy.h"
 
